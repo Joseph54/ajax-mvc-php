@@ -1,6 +1,6 @@
 <?php
 // DB Params
-$tav=2;
+$tav=1;
 
 if($tav==1){
     define('DB_HOST', 'localhost');
