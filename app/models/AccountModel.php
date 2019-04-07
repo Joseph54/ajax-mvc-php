@@ -31,6 +31,23 @@ class AccountModel
         }
     }
 
+    // Regsiter user
+    public function register($data){
+        $this->db->query('INSERT INTO users (name, email, password, age) VALUES(:name, :email, :password, :age)');
+        // Bind values
+        $this->db->bind(':name', $data['name']);
+        $this->db->bind(':email', $data['email']);
+        $this->db->bind(':password', $data['password']);
+        $this->db->bind(':age', $data['age']);
+
+
+        // Execute
+        if($this->db->execute()){
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     public function createAccount($username, $password)
     {

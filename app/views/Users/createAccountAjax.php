@@ -4,6 +4,8 @@
     <form method="post" action="createAccountAjax" id="ajaxAccount">
         <input type="text" name="username" id="user" placeholder="username">
         <input type="password" name="password" id="pass" placeholder="password">
+        <input type="text" name="age" id="age" placeholder="age
+">
         <input type="submit" name="submit">
     </form>
 <script>

@@ -7,10 +7,10 @@
    * Return rows and results
    */
   class Database {
-    private $host = DB_HOST;
-    private $user = DB_USER;
-    private $pass = DB_PASS;
-    private $dbname = DB_NAME;
+    private $host = localhost;
+    private $user = root;
+    private $pass = '';
+    private $dbname = mvc-exam;
 
     private $dbh;
     private $stmt;
